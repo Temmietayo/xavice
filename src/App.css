@@ -1,38 +1,226 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: matter;
+  font-weight: 300;
+  src: url("./assets/fonts/matter/Matter-Light.woff") format("woff");
+}
+@font-face {
+  font-family: matter;
+  font-weight: 400;
+  src: url("./assets/fonts/matter/Matter-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: matter;
+  font-weight: 500;
+  src: url("./assets/fonts/matter/Matter-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: matter;
+  font-weight: 600;
+  src: url("./assets/fonts/matter/Matter-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: matter;
+  font-weight: 700;
+  src: url("./assets/fonts/matter/Matter-Bold.woff") format("woff");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100vh;
+  outline: none;
+  font-family: "Matter", "Courier New", Courier, monospace;
+  background: #fff;
+}
+.clip-art {
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  /* margin-top: 1.5em; */
+  max-width: 1280px;
+  height: calc(100vh - 100px);
+  justify-content: space-between;
   align-items: center;
+}
+
+div,
+h1,
+h4,
+form,
+input,
+p {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.header-text {
+  /* position: absolute; */
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 50px;
+  left: 91px;
+  top: 34px;
+  color: #0066ff;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25.2189px;
+  line-height: 30px;
+  letter-spacing: -0.05em;
+}
+.header-text a {
+  text-decoration: none;
+  color: #0066ff;
+}
+
+.comingsoon-text {
+  /* position: absolute; */
+  left: 93px;
+  top: 143px;
+  font-weight: 200;
+  color: #797979;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+h1 {
+  /* position: absolute; */
+  width: 618px;
+  height: 120px;
+  left: 92px;
+  top: 181px;
+
+  font-family: Matter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: #02111b;
+}
+
+.about-content {
+  margin-top: 20px;
+  width: 474px;
+  height: 67px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15.079px;
+  line-height: 22px;
+  /* or 146% */
+  letter-spacing: -0.02em;
+  color: #797979;
+}
+
+.launch-text {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: Matter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  /* identical to box height, or 169% */
+
+  /* xavice/black */
+
+  color: #02111b;
+}
+
+.input-type {
+  width: 297px;
+  padding: 20px;
+  height: 58px;
+  left: 91px;
+  top: 553px;
+
+  background: #ffffff;
+  opacity: 0.5;
+  /* xavice/grey */
+
+  border: 1px solid #797979;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.work-span {
+  color: #0066ff;
+  margin-top: 16px;
+}
+
+.reservation-button {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 7px 32px;
+  border: none;
+  width: 607px;
+  height: 41px;
+  margin-top: 40px;
+  background: linear-gradient(90deg, #0066ff 0%, #0c4191 101.3%);
+  border-radius: 8px;
+}
+.form-container1 {
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.form-input {
+  margin-bottom: 2.5em;
+  margin-right: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dropdown-option {
+  width: 297px;
+  padding: 20px;
+  height: 58px;
+}
+button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  /* identical to box height, or 169% */
+
+  text-align: center;
+
+  /* xavice/white */
+
+  color: #fefcfb;
+}
+.first-half {
+}
+
+.rotating-sector {
+  position: absolute;
+  width: 202px;
+  height: 176px;
+  top: -82px;
+  left: -94px;
+}
+
+.page-container {
+  min-height: 100vh;
+  /* background: linear-gradient(90deg, rgba(0, 102, 255, 0.8) 0%, rgba(12, 65, 145, 0.8) 101.3%); */
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: green;
   }
-  to {
-    transform: rotate(360deg);
+  h1 {
+    padding: 0;
+    margin: 0;
+    width: 342px;
+    font-size: 32px;
   }
 }
