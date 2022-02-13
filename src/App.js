@@ -1,44 +1,49 @@
 import "./App.css";
 import trustImg from "./assets/trustImg.png";
 import ellipseBig from "./assets/ellipseBig.svg";
+import comingsoon from "./assets/comingSoon.svg";
+import firstToKnow from "./assets/firstToKnow.svg";
 import rotatingSector from "./assets/rotating-sector.gif";
+import InputPhoneNumberGroup from "./InputPhoneNumberGroup";
 
 function App() {
   return (
     <>
       <img src={ellipseBig} alt="" className="clip-art" />
-      <div class="page-container">
-        <div class="header-text">
+      <div className="page-container">
+        <div className="header-text">
           <a href="/">xavice</a>
         </div>
-        <div class="container">
-          <section class="first-half">
-            <div class="comingsoon-text">
+        <div className="container">
+          <section className="first-half">
+            <div className="comingsoon-text">
+              <img src={comingsoon} alt="" className="" />
               <h4>COMING SOON</h4>
             </div>
             <div>
               <h1>
-                Changing How Clients <span class="work-span">Work </span> With
+                Changing How Clients <span className="work-span">Work </span> With
                 Service Providers
               </h1>
             </div>
-            <div class="about-content">
+            <div className="about-content">
               <p>
                 Xavice is creating an enabling system for Servicer Providers to
                 work with their clients seamlessly.
               </p>
             </div>
 
-            <div class="launch-text">
+            <div className="launch-text">
+              <img src={firstToKnow} alt="" className="" />
               <p>Be the first to know when we launch 🚀</p>
             </div>
 
             <form>
-              <div class="form-container1">
-                <div class="form-input">
+              <div className="form-container1">
+                <div className="form-input">
                   <label id="email" for="email"></label>
                   <input
-                    class="input-type"
+                    className="input-type"
                     type="email"
                     name="email"
                     id="email"
@@ -46,11 +51,11 @@ function App() {
                     required
                   />
                 </div>
-                <div class="form-input">
+                {/* <div className="form-input">
                   <label id="phoneno" for="phoneno"></label>
                   <span>
                     <select
-                      class="input-type"
+                      className="input-type"
                       name="category"
                       id="category"
                       placeholder="Category"
@@ -63,13 +68,14 @@ function App() {
                       <option>Australia(+61)</option>
                     </select>
                   </span>
-                </div>
+                </div> */}
+                <InputPhoneNumberGroup />
               </div>
-              <div class="form-container1">
-                <div class="form-input">
+              <div className="form-container1">
+                <div className="form-input">
                   <label id="username" for="username"></label>
                   <input
-                    class="input-type"
+                    className="input-type"
                     type="text"
                     name="username"
                     id="username"
@@ -77,35 +83,39 @@ function App() {
                     required
                   />
                 </div>
-                <div class="form-input">
+                <div className="form-input">
                   <label id="category" for="category"></label>
 
                   <select
-                    class="input-type"
+                    className="input-type"
                     name="category"
                     id="category"
                     placeholder="Category"
                   >
-                    <option class="dropdown-option" value="" disabled selected>
+                    <option className="dropdown-option" value="" disabled selected>
                       Category
                     </option>
-                    <option class="dropdown-option" value="serviceprovider">
+                    <option className="dropdown-option" value="serviceprovider">
                       Service providers
                     </option>
-                    <option class="dropdown-option" value="clients">
+                    <option className="dropdown-option" value="clients">
                       Clients
                     </option>
                   </select>
                 </div>
               </div>
               <div>
-                <button class="reservation-button">Reserve my spot</button>
+                <button className="reservation-button">Reserve my spot</button>
               </div>
             </form>
           </section>
           <section style={{ zIndex: 10 }}>
             <div style={{ position: "relative" }}>
-              <img src={trustImg} alt="" style={{ zIndex: 10, position: "relative" }} />
+              <img
+                src={trustImg}
+                alt=""
+                style={{ zIndex: 10, position: "relative", width: "600px" }}
+              />
               <img className="rotating-sector" src={rotatingSector} alt="" />
             </div>
           </section>

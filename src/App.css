@@ -24,12 +24,19 @@
   src: url("./assets/fonts/matter/Matter-Bold.woff") format("woff");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
 body {
   height: 100vh;
   outline: none;
   font-family: "Matter", "Courier New", Courier, monospace;
   background: #fff;
 }
+
 .clip-art {
   object-fit: cover;
   position: fixed;
@@ -41,24 +48,12 @@ body {
 .container {
   display: flex;
   margin: 0 auto;
-  margin-top: 1.5em;
+  margin-top: 20px;
   max-width: 1280px;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
   justify-content: space-between;
   align-items: center;
 }
-
-div,
-h1,
-h4,
-form,
-input,
-p {
-  padding: 0;
-  margin: 0;
-  outline: none;
-}
-
 .header-text {
   /* position: absolute; */
   display: block;
@@ -67,7 +62,7 @@ p {
   margin: 0 auto;
   height: 50px;
   left: 91px;
-  margin-top: 34px;
+  padding-top: 30px;
   color: #0066ff;
   font-style: normal;
   font-weight: 800;
@@ -81,9 +76,7 @@ p {
 }
 
 .comingsoon-text {
-  /* position: absolute; */
-  left: 93px;
-  top: 143px;
+  position: relative;
   font-weight: 200;
   color: #797979;
   font-style: normal;
@@ -91,13 +84,15 @@ p {
   font-size: 12px;
   line-height: 22px;
 }
+.comingsoon-text img {
+  position: absolute;
+  left: -19px;
+  top: -12px;
+}
 
 h1 {
   /* position: absolute; */
-  width: 618px;
-  height: 120px;
-  left: 92px;
-  top: 181px;
+  /* width: 618px; */
 
   font-family: Matter;
   font-style: normal;
@@ -123,6 +118,7 @@ h1 {
 }
 
 .launch-text {
+  position: relative;
   margin-top: 40px;
   margin-bottom: 10px;
   font-family: Matter;
@@ -135,6 +131,12 @@ h1 {
   /* xavice/black */
 
   color: #02111b;
+}
+
+.launch-text img {
+  position: absolute;
+  left: -87px;
+  bottom: -243px;
 }
 
 .input-type {
@@ -198,19 +200,35 @@ button {
   color: #fefcfb;
 }
 .first-half {
+  z-index: 20;
 }
 
 .rotating-sector {
   position: absolute;
-  width: 202px;
-  height: 176px;
-  top: -82px;
-  left: -94px;
+  width: 252px;
+  height: 226px;
+  top: -105px;
+  left: -120px;
 }
 
 .page-container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* background: linear-gradient(90deg, rgba(0, 102, 255, 0.8) 0%, rgba(12, 65, 145, 0.8) 101.3%); */
+}
+
+.phone {
+  width: 297px !important;
+  padding: 20px;
+  height: 58px;
+
+  background: #ffffff;
+  opacity: 0.5;
+  top: 0;
+
+
+  border: 1px solid #797979;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 @media only screen and (max-width: 600px) {
