@@ -32,7 +32,7 @@ body {
 }
 .clip-art {
   object-fit: cover;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   height: 100%;
@@ -41,9 +41,9 @@ body {
 .container {
   display: flex;
   margin: 0 auto;
-  /* margin-top: 1.5em; */
+  margin-top: 1.5em;
   max-width: 1280px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 120px);
   justify-content: space-between;
   align-items: center;
 }
@@ -67,7 +67,7 @@ p {
   margin: 0 auto;
   height: 50px;
   left: 91px;
-  top: 34px;
+  margin-top: 34px;
   color: #0066ff;
   font-style: normal;
   font-weight: 800;
