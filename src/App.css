@@ -145,15 +145,26 @@ h1 {
   height: 58px;
   left: 91px;
   top: 553px;
-
+  color: #02111b !important;
+  font-family: Matter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  
   background: #ffffff;
-  opacity: 0.5;
   /* xavice/grey */
 
   border: 1px solid #797979;
   box-sizing: border-box;
   border-radius: 4px;
 }
+/* input:focus{
+  border: 2px solid #0066ff;
+}
+
+select:focus{
+  border: 2px solid #0066ff;
+} */
 .work-span {
   color: #0066ff;
   margin-top: 16px;
@@ -232,9 +243,9 @@ button {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
+  /* body {
     background-color: green;
-  }
+  } */
   h1 {
     padding: 0;
     margin: 0;

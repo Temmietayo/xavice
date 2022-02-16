@@ -4,7 +4,6 @@ import ellipseBig from "./assets/ellipseBig.svg";
 import comingsoon from "./assets/comingSoon.svg";
 import firstToKnow from "./assets/firstToKnow.svg";
 import rotatingSector from "./assets/rotating-sector.gif";
-import InputPhoneNumberGroup from "./InputPhoneNumberGroup";
 
 function App() {
   return (
@@ -43,7 +42,7 @@ function App() {
                 <div className="form-input">
                   <label id="email" for="email"></label>
                   <input
-                    className="input-type"
+                    class="input-type"
                     type="email"
                     name="email"
                     id="email"
@@ -51,7 +50,7 @@ function App() {
                     required
                   />
                 </div>
-                {/* <div className="form-input">
+                <div className="form-input">
                   <label id="phoneno" for="phoneno"></label>
                   <span>
                     <select
@@ -61,15 +60,15 @@ function App() {
                       placeholder="Category"
                     >
                       <option value="" disabled selected>
-                        234
+                        +234
                       </option>
                       <option value="Nigeria">Nigeria(+234)</option>
-                      <option value="clients">United States(+1)</option>
-                      <option>Australia(+61)</option>
+                      <option value="UnitedStates">United States(+1)</option>
+                      <option value="Australia">Australia(+61)</option>
                     </select>
                   </span>
-                </div> */}
-                <InputPhoneNumberGroup />
+                </div>
+                
               </div>
               <div className="form-container1">
                 <div className="form-input">
